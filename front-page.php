@@ -24,7 +24,7 @@
 		</div>
 	</header>
 
-	<header id="home--header" class="home--header is_opaque">
+	<header id="home--header" class="home--header is_light">
 		<div class="wrapper wrapper--wide">
 			<div class="home--header__text">
 				<?php //the_content(); ?>
