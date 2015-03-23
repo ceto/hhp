@@ -1,0 +1,285 @@
+.mobile-header{
+	font-family: $sans-serif;
+	//background-color: $red_main;
+	color:#fff;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	position: absolute;
+	left:0;width:100%;
+	z-index:11;
+
+	@include bp($s3) {
+		display: none;
+	}
+	
+	.navbar-brand-mobile {
+
+		font-family: $sans-serif;
+		color:#fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: block;
+		position: absolute;
+		top:0;
+		width:130px;
+		height:35px;
+		background-image: url('../img/logo.png');
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: auto 100%;
+		text-indent: -9999px;
+		overflow:hidden;
+		font-size: 13px;
+		line-height: 1;
+		padding:0.5em 0;
+
+		&:hover, &:focus {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
+
+	.nav-toggle {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 1;
+		border:1px solid #fff;
+		padding: 0.5em 0.5em;
+		margin-top:5px;
+		cursor: pointer;
+		float:right;
+		&:hover, &:focus {
+			box-shadow:inset 0 0 0 1px #fff;
+		}
+	}
+	
+	input[type="checkbox"]#nav-toggle {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+
+	  &:checked + .navbar {
+	  		height: 100%;
+			visibility:visible;
+			opacity:1;
+			background-image: url('../img/logo_kicsike.png');
+			background-repeat: no-repeat;
+			background-position: 50% 90%;
+			.navbar-brand {
+				display: none;
+			}
+		}
+	}
+
+
+
+.navbar-brand {
+	position: absolute;
+	height:42px;
+	width:158px;
+	top:8px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: auto 100%;
+	//background-color: $green;
+	display: none;
+	font-family: $sans-serif;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1;
+	padding:0.333em 0;
+	&:hover, &:focus {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.whitebg &{
+		color:#000;
+		background-image: url('../img/logo.png');
+		&:hover, &:focus {
+			color: #000;
+		}
+	}
+
+	@include bp($s2){
+		display: inline-block;
+		float:left;
+	}
+}
+
+.navbar {
+	
+	color:#fff;
+	
+	background-color: $gray-xlight;
+
+	position: fixed;
+	z-index:10;
+	left:0;
+	width:100%;
+
+	
+	visibility:hidden;
+	opacity:0;
+	transition: opacity 0.5s, visibility 0.5s;
+
+
+	
+	@include bp($s3) {
+		visibility: visible;
+		opacity: 1;
+		display: block;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:10;
+		background-color: transparent;
+		
+		height:65px;
+		&.fixedhead {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      top:-65px;
+      //background-color: #fff;
+      height:65px;
+      transition:top 0.6s ease;
+      &.show {
+        top:0;
+      }
+    }
+		
+		&.redbg {
+			background-color: $gray-xlight;
+		}
+		&.whitebg {
+			background-color: $gray-xlight;
+		}
+
+
+	}
+
+
+	.wrapper{
+		padding-top:1.5em;
+		padding-bottom: 1.5em;
+	}
+
+}
+
+
+.page-hero {
+	background-color: $red-main;
+		
+	text-align: center;
+
+	@include bp($s2) {
+		
+	}
+
+	.wrapper {
+		min-height: 160px;
+	}
+
+	.wp-post-image {
+		display: block;
+		width:100%;
+		max-width: none;
+	}
+
+	.watermark{
+		position: absolute;
+		right:6px;
+		bottom: 12px;
+		@include bp($s2) {
+			right:24px;
+			bottom: 24px;
+		}
+		@include bp($s3) {
+			right:36px;
+			bottom: 24px;
+		}
+		@include bp($s5) {
+			right:48px;
+			bottom: 36px;
+		}
+	}
+}
+
+
+.apartment-hero {
+	background-color: $red-main;
+	@include bp($s2) {
+	}
+
+	.wrapper {
+		min-height: 65px;
+	}
+}
+
+.page-header{
+	text-align: center;
+	text-transform: uppercase;
+	margin:2em 0;
+	h1,h2,h3 {
+		line-height: 1.25;
+		letter-spacing: 0.125em;
+		color:$red-main;
+		margin:0;
+		span{
+			font-family: $sans-serif;
+			font-weight: 400;
+			font-size: 66.666%;
+			letter-spacing: 0;
+			display: block;
+		}
+		a {
+			color:inherit;
+			text-decoration: none;
+			&:hover,&:focus{
+				color:$gray-text;
+			}
+		}
+		i{
+			font-size: 120%;
+		}
+	}
+	&.inverse{
+		h1,h2,h3 {
+			color:#fff;
+		}
+	}
+}
+
+.theader {
+	@include clearfix();
+	text-align: center;
+	padding-top:0.5em;
+	padding-bottom: 0.5em;
+	line-height: 1.25;
+	margin:3em 0 1em;
+	h1,h2,h3 {
+		color:#000;
+		font-family: $deffont;
+		font-size: 21px;
+		font-weight: 400;
+		letter-spacing: 0.125em;
+		margin: 0;
+	}
+	p{
+		font-family: $sans-serif;
+		margin:0;
+	}
+}

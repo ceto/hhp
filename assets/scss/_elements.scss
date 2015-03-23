@@ -1,0 +1,129 @@
+.wrapper-page {
+	padding-top: 0;
+	padding-bottom: 6em;
+}
+
+/****************** Data Table Styles **************/
+.datatable {
+	margin:1em 0;
+	display:table;
+	//border-collapse:collapse;
+	border-collapse: separate;
+	border-spacing:8px;
+	width:100%;
+	font-family:$sans-serif;
+	font-size:12px;
+	line-height:1;
+	//overflow:hidden;
+	@include bp($s2){
+		font-size:14px;	
+	}
+}
+.datarow{
+	display:table-row-group;
+	//width:100%;
+	&.datatable--head{
+		display: table-row;
+		font-family: $deffont;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.125em;
+		//letter-spacing: 0.025em;
+		.datarow--cell{
+			padding:1em 0.666em;
+			&.de {
+				padding-left:19px;
+			}
+		}
+	}
+}
+
+
+	.datarow--link {
+		display:table-row;
+		//width:100%;
+		//border:1px solid transparent;
+		color:#000;
+		&.active, &:hover, &:focus {
+			outline:1px solid #000;
+			text-decoration: none;
+		}
+	}
+
+	.datarow--cell {
+		position: relative;
+		display:table-cell;
+		padding:.666em 0.125em .333em;
+		text-align:center;
+		vertical-align: middle;
+
+		//height: 2.75em;
+		@include bp($s2){
+			padding:.666em 0.666em .333em;
+		}
+		&.de {
+			//text-align: right;
+			padding-left:19px;
+		}
+		&.no3d{
+			//padding-left: 18px;
+		}
+		.ministate{
+			font-size: 0.75em;
+			display: block;
+			font-family: $deffont;
+			text-transform: uppercase;
+			font-weight: 100;
+		}	
+		&.statepris {
+		}
+		&.stateold {
+			display: none;
+		}	
+	}
+
+	.tooltip .ministate {
+		display: none;
+	}
+	.tiny3d{
+		position: absolute;
+		left:6%;
+		top:16%;
+		cursor: zoom-in;
+		display: inline-block;
+		width:1.875em;
+		height:auto;
+		//float:left;
+		//display: block;
+		.tooltip &{
+			left:78%;
+			top:0.875em;
+			width:1.25em;
+		}
+	}
+
+	
+.pdf-viewer{
+	width:100%;
+	min-height: 300px;
+	border:none;
+	@include bp($s2){
+		min-height: 900px;
+		height: 900px;
+	}
+	p {
+		padding: 1em;
+	}
+	object {
+		display: block;
+		background-color: $gray_main;	
+	}
+}
+
+
+.full_iframe {
+	width:100%;
+	min-height: 75vh;
+	overflow: hidden; 
+
+}

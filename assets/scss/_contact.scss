@@ -1,0 +1,143 @@
+.footer--contactblock {
+	font-family: $sans-serif;
+	background-color: #fff;
+	padding-bottom: 2em;
+}
+
+	.page-header {
+		h2 {
+			color:$gray-text;
+		}
+	}
+	
+	.contact--left{
+		text-align: center;
+		margin-bottom: 3em;
+		
+		@include bp($s2) {
+			float:left;
+			width:33.333%;
+			padding:24px;
+			margin-bottom: 0;
+		}
+
+		img {
+			max-width: 180px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			letter-spacing: 0.25em;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		a {
+			color:$gray-text;
+			&:hover,&:focus {
+				color:$red-main;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.contact--right {
+		max-width: 380px;
+		margin: 0 auto;
+		
+		@include bp($s2) {
+			max-width: none;
+
+			float:right;
+			width:66.666%;
+			padding:24px;
+		}
+	}
+
+
+
+
+.formitem {
+	margin:2em 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.formactions {
+	margin:2em 0;
+	text-align: center;
+}
+
+
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	font-family: $sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color:$gray-light;
+	padding:0.75em 1em;
+	border:2px solid #000;
+	border-top: none;
+	border-right: none;
+	width:100%;
+	outline: none;
+
+
+	&:focus {
+		color:$gray-text;
+		box-shadow:inset 1px -1px 0 0 #000;
+	}
+}
+
+textarea {
+	line-height: 1.4;
+}
+
+.btn {
+	display: inline-block;
+	background-color: $cyan;
+	color: #fff;
+	border:1px solid #000;
+	font-family: $deffont;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height: 1;
+	padding:.666em 1.125em 0.333em 1.125em;
+	margin:.5em .5em;
+	text-align: center;
+	outline:none;
+
+	&:hover, &:focus {
+		text-decoration: none;
+		cursor: pointer;
+		background-color: $cyan-dark;
+	}
+
+	// &.btn-light {
+	// 	color: #fff;
+	// 	border:1px solid #fff;
+	// 	&:hover, &:focus {
+	// 		color:#fff;
+	// 		box-shadow:inset 0 0 0 1px #fff;
+	// 	}
+	// }
+}
+
+.contact-response {
+	text-align: center;
+	p{
+		margin:0;
+		padding:1em; 
+		width:100%;
+		color:#fff;
+		&.success {
+			background-color: $green;
+		}
+		&.error{
+			background-color: $red_main
+		}
+
+	}
+}

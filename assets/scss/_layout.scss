@@ -1,0 +1,96 @@
+.wrapper {
+	@include clearfix();
+	position: relative;
+	margin:0 auto;
+	width:100%;
+}
+
+	.wrapper--fullwidth {
+		max-width: 100%;
+	}
+
+	.wrapper--wide {
+		max-width: $s4;
+		padding:0 12px;
+		@include bp($s2) {
+			padding:0 24px;
+		}
+		@include bp($s3) {
+			padding:0 36px;
+		}
+		.navbar &{
+			max-width: none;
+		}
+	}
+
+	.wrapper--narrow {
+		max-width:$s3;
+		padding: 0 12px;
+		@include bp($s2) {
+			padding:0 24px;
+		}
+		@include bp($s3) {
+			padding:0 36px;
+		}
+	}
+
+	.wrapper--extranarrow {
+		max-width:$s2;
+		padding: 0 12px;
+		@include bp($s2) {
+			padding:0 24px;
+		}
+		@include bp($s3) {
+			padding:0 36px;
+		}
+	}
+
+
+.multicolumn{
+	p {
+		text-align: justify;		
+	}
+	
+	@include bp($s2) {
+		column-count: 2;
+		column-gap: 36px;
+
+		*:first-child{
+			margin-top: 0;
+		}
+		p, ul{
+			break-inside:avoid;
+		}
+
+
+	
+	}
+	@include bp($s3) {
+		column-count: 3;
+		column-gap: 48px;
+	}
+
+}
+
+
+.twocolumn{
+	p {
+		text-align: justify;		
+	}
+	
+	@include bp($s2) {
+		column-count: 2;
+		column-gap: 36px;
+
+		*:first-child{
+			margin-top: 0;
+		}
+		p, ul{
+			break-inside:avoid;
+		}
+
+
+	
+	}
+}
+

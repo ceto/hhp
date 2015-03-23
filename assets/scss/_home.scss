@@ -1,0 +1,315 @@
+.home__top {
+  padding: 4em 0 2em;
+
+  text-align: center;
+
+  background-color: $gray-xlight;
+
+  @include bp($s2) {
+    padding: 5em 0 2em;
+    text-align: left;
+  }
+}
+
+.home__top__brandi {
+  //background-color: red;
+  position: relative;
+  width: 14em;
+  height: 5em;
+  margin:0 auto 1em auto;
+  @include bp($s2) {
+    
+    
+
+    float: right;
+
+
+
+    text-align: right;
+  }
+
+  @include bp($s3) {
+    width: 17em;
+    height: 6.5em;
+  }
+  .home__top__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    background-size: auto 90%;
+
+    @include hide-text();
+  }
+  .home__top__discl {
+    font-family: $titlefont;
+    font-size: 1.333em;
+    font-weight: 400;
+    line-height: 1;
+    color:$cyan-dark;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.home__top__text {
+  @include bp($s2) {
+    float: left;
+
+    width: 70%;
+  }
+  .home__top__title {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 4.5em;
+    margin:.5em 0 0 0;
+  }
+
+  .home__top__subtitle {
+    font-weight: 100;
+    line-height: 1;
+    font-size: 1.875em;
+    margin:0.5em 0 0;
+    @include bp($s2) {
+      margin-left: 3em;
+    }
+  }
+
+
+}
+.home--header {
+  color: #000;
+  background-color: #fff;
+  background-image: url('../img/home_head_bg2_small.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include bp($s2) {
+    background-image: url('../img/home_head_bg2_large.jpg');
+  }
+  @include bp($s3) {
+  }
+  @include bp($s4) {
+    background-image: url('../img/home_head_bg2_1920.jpg');
+  }
+  @include bp($s5) {
+    background-image: url('../img/home_head_bg2_brutal.jpg');
+  }
+  .wrapper {
+    height: 20em;
+
+    @include bp($s2) {
+      height: 40em;
+    }
+    @include bp($s3) {
+    }
+    @include bp($s4) {
+      height: 50em;
+    }
+    @include bp($s5) {
+    }
+  }
+}
+
+
+.home--header__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 1em;
+
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+
+  text-shadow: 0 0 1px rgba(#000,.2);
+
+  @include bp($s2) {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.25;
+
+    margin: 1em auto 1em;
+
+    text-transform: uppercase;
+
+    @include bp($s2) {
+      font-size: 2.5em;
+    }
+  }
+}
+
+.home__headcircle {
+  font-size: 1em;
+  font-weight: 100;
+
+  position: absolute;
+  bottom: -2em;
+  left: 1em;
+
+  width: 8em;
+  height: 8em;
+  padding: 2em 1em;
+
+  text-align: center;
+
+  color: #fff;
+  border-radius: 50%;
+  background-color: $cyan-dark;
+
+  @include bp($s2) {
+    font-size: 2em;
+  }
+}
+
+
+.home__contentblock {
+  padding: 2.5em 0;
+
+  text-align: center;
+
+  background-color: $gray-xlight;
+  h2 {
+    font-size: 1.5em;
+
+    margin-bottom: 1.5em;
+
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.25em;
+  }
+  .wrapper > *:first-child {
+    margin-top: 0;
+  }
+  .wrapper > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+#home__prosjektet {
+  padding: 6em 0;
+}
+
+#home__omradet,
+#home__dokumenter {
+  h2 {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: -1.5em;
+      left: 33.333%;
+
+      width: 33.333%;
+      height: 1px;
+
+      content: '';
+
+      background-color: #000;
+    }
+  }
+}
+
+.home--mapblock {
+  border-bottom: 1px solid #000;
+  .wrapper {
+    height: 20em;
+
+    @include bp($s2) {
+      height: 40em;
+    }
+  }
+}
+
+#map-canvas {
+  height: 20em;
+  margin: 0;
+  padding: 0;
+
+  @include bp($s2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 100%;
+  }
+  @include bp($s3) {
+  }
+  @include bp($s4) {
+  }
+  @include bp($s5) {
+  }
+}
+
+
+
+.home--mapblock--text {
+  position: relative;
+  z-index: 1;
+
+  padding: 2em 12px;
+
+  text-align: justify;
+
+  background-color: #fff;
+
+  @include bp($s2) {
+    width: 340px;
+    padding: 2em 24px 4em;
+  }
+  @include bp($s3) {
+    width: 400px;
+    padding: 2em 36px 4em;
+  }
+  @include bp($s4) {
+    width: 430px;
+  }
+  @include bp($s5) {
+    width: 25%;
+    padding: 3em 48px 5em;
+  }
+  h2 {
+    font-size: 1.333em;
+
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+    text-transform: uppercase;
+
+    color: $red-main;
+  }
+}
+
+
+.home--bilderblock {
+  color: $cyan;
+  background-color: $gray-xlight;
+}
+
+
+
+
+.home--chooserblock {
+  //color: #fff;
+  background-color: $cyan;
+  .detailswrapper {
+    .wrapper:last-of-type {
+      padding-bottom: 4em;
+    }
+  }
+}

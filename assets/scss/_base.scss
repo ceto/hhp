@@ -1,0 +1,125 @@
+/* apply a natural box layout model to all elements */
+*,*:before,*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* ==|== primary styles =====================================================
+   Author: Gabor Szabo
+   ========================================================================== */
+
+html,
+body {
+  font-family: $deffont;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $gray-text;
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: $gray-light;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  //color: $gray-text;
+}
+
+p {
+  /* -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; */
+  -moz-font-feature-settings: "liga=1, dlig=1, onum=1";
+  -moz-font-feature-settings: "liga", "dlig", "onum";
+  -ms-font-feature-settings: "liga", "dlig", "onum";
+  -webkit-font-feature-settings: "liga", "dlig", "onum";
+  -o-font-feature-settings: "liga", "dlig", "onum";
+  font-feature-settings: "liga", "dlig", "onum";
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $deffont;
+  font-weight: 400;
+  margin-bottom:0.25em;
+  margin-top: 1.5em;
+  letter-spacing: -0.0333em;
+  & + p, & + ul, & + ol {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+#map-canvas img {
+  max-width: inherit;
+}
+
+html[data-useragent*='Chrome'][data-platform*='Mac'] p {
+  font-feature-settings: normal;
+}
+
+:target:not(#comments):not(.global-nav) {
+  animation: target-fade 2s 1;
+}
+
+
+@keyframes target-fade {
+  0% {
+    background-color: rgba($gray-light,.1);
+    outline: 6px solid rgba($gray-light,1);
+  }
+  100% {
+    background-color: rgba($gray-light,0);
+    outline: 6px solid rgba($gray-light,1);
+  }
+}
+
+
+
+//
+// Component animations
+// --------------------------------------------------
+
+.fade {
+  opacity: 0;
+  transition:opacity .15s linear;
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: none;
+
+  &.in      { display: block; }
+  // [converter] extracted tr&.in to tr.collapse.in
+  // [converter] extracted tbody&.in to tbody.collapse.in
+}
+
+tr.collapse.in    { display: table-row; }
+
+tbody.collapse.in { display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease;
+}

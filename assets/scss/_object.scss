@@ -1,0 +1,14 @@
+.main-object {
+	background-color:$red_main;
+	color:#fff;
+
+	.page-header{
+		margin:0;
+		padding:2em 0;
+		background-color:#fff;
+		h1,h2,h3 {
+			color:$red-main;
+		}
+	}
+}
+
