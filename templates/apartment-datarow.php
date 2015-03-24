@@ -13,9 +13,9 @@
   >
 
 		<span class="datarow--cell <?php echo get_post_meta( $post->ID, '_meta_3dpano', true )?'has3d de':'no3d de'; ?>">
-				<?php if ( get_post_meta( $post->ID, '_meta_3dpano', true )) : ?>
+				<?php /* if ( get_post_meta( $post->ID, '_meta_3dpano', true )) : ?>
 					<img class="tiny3d popup-3d" href="<?php echo get_post_meta( $post->ID, '_meta_3dpano', true ); ?>" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/360small.png" alt="View 3D">
-				<?php endif; ?>
+				<?php endif; */?>
 				<?php echo get_the_title($post->ID); ?>
 		</span>
 		

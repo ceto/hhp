@@ -1,3 +1,114 @@
+.staff {
+padding:3em 0;
+background-color: $gray-xlight;
+border-top:1px solid #000;
+}
+
+.garanti {
+	text-align: center;
+	@include clearfix();
+	max-width: 28em;
+	margin:0 auto 2em auto;
+	@include bp($s2){
+		text-align: left;
+		margin:2em auto;
+	}
+	@include bp($s3){
+		width:33.333%;
+		float:left;
+		max-width: none;
+
+	}
+}
+
+.garanti__logo {
+	max-width: 20em;
+	display: block;
+	margin: 0 auto;
+	@include bp($s2){
+		float:left;
+		width:33.333%;
+		max-width: none;
+	}
+	@include bp($s3){
+		width:30%;
+	}
+}
+
+.garanti__addr {
+	
+	margin:0 0;
+	padding:1em 1em;
+	font-weight: 400;
+	font-size: 1.125em;
+	@include bp($s2){
+		float:right;
+		width:66.666%;
+		padding:1.5em 0 0 1em;
+	}
+	@include bp($s3){
+		padding-top: .25em;
+		width:70%;
+	}
+}
+
+.staff__members {
+	@include clearfix();
+	@include bp($s3){
+		width:66.666%;
+		float:right;
+	}
+
+}
+
+
+.member {
+	@include clearfix();
+	text-align: center;
+	width:32%;
+	float:left;
+	margin:1em 1%;
+	&:last-child {
+		margin-right: 0;	
+	}
+	&:first-child {
+		margin-left: 0;	
+	}
+
+	@include bp($s1) {
+		padding:0 1%;
+	}
+
+	@include bp($s2) {
+		text-align: right;
+		padding:0;
+
+	}
+}
+
+.member__portre {
+	
+	@include bp($s2){
+		float:right;
+		width:45%;
+		padding-left: 1em;
+	}
+}
+
+.member__name {
+	@include bp($s2){
+		float:left;
+		width:55%;
+	}
+}
+.member__phone {
+	@include bp($s2){
+		float:left;
+		width:55%;
+	}
+}
+
+
 .content-info {
 	background-color: $cyan;
 	color:#fff;
@@ -9,27 +120,34 @@
 	.footer--logo {
 		margin:1.5em auto;
 		display: inline-block;
+		@include bp($s2){
+			width: 10%;
+			float:left;
+		}
 	}
 	.footer--tothetop {
 		display: inline-block;
 		text-transform: uppercase;
 		font-weight: bold;
-		color:#fff;
+		color:$gray-xlight;
+		@include bp($s2){
+			width:10%;
+			float:right;
+		}
 		&:hover, &:focus {
-			color:$green;
+			color:#fff;
 			text-decoration: none;
 			i{
-				border-color: $green;
+				border-color: #fff;
 			}
 		}
 		i{
 			text-transform: none;
 			font-weight: normal;
-			border-radius: 50%;
-			border:2px solid #fff;
+			border:1px solid #fff;
 			width:2em;
 			height: 2em;
-			line-height: 1.75em;
+			line-height: 1.875em;
 			margin-bottom: 0.5em;
 			text-align: center;
 			padding-left: 1px;
@@ -37,11 +155,17 @@
 	}
 	.footer--copy{
 		display: block;
-		font-size: 0.875em;
+		//font-size: 0.875em;
+		font-weight: 400;
+		@include bp($s2){
+			width:80%;
+			float:left;
+			text-align: center;
+		}
 		a {
-			color:$gray-light;
+			color:$gray-xlight;
 			&:hover, &:focus {
-				color:$red_main;
+				color:#fff;
 				text-decoration: none;
 
 			}

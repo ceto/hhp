@@ -12,15 +12,18 @@
 	background-position: top center;
 	
 	&.visual-chooser-starter{
-		background-image: url(../img/Arolia_Starter_CD_small.jpg);
+		background-image: url(../img/chooser_bg_small.jpg);
 		@include bp($s2) {
-			background-image: url(../img/Arolia_Starter_CD_medium.jpg);
+			background-image: url(../img/chooser_bg_medium.jpg);
 		}
 		@include bp($s3) {
-			background-image: url(../img/Arolia_Starter_CD_large.jpg);
+			background-image: url(../img/chooser_bg_large.jpg);
 		}
 		@include bp($s4) {
-			background-image: url(../img/Arolia_Starter_CD_full.jpg);
+			background-image: url(../img/chooser_bg_hd.jpg);
+		}
+		@include bp($s5) {
+			background-image: url(../img/chooser_bg_full.jpg);
 		}
 	}
 

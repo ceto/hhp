@@ -297,8 +297,18 @@
 
 
 .home--bilderblock {
-  color: $cyan;
   background-color: $gray-xlight;
+  .page-header {
+    background-color: #fff;
+    margin:0;
+    padding:2em;
+    
+    // position: absolute;
+    // z-index:9;
+    // width: 100%;
+    // left:0;
+    // height: 4em;
+  }
 }
 
 

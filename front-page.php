@@ -1,17 +1,6 @@
-<nav class="subnav">
-	<ul class="nav navbar-subnav">
-		<li><a href="#home--header" data-toggle="tooltip" data-placement="left" title="Toppen"><span>Toppen</span></a></li>
-		<li><a href="#home--videoblock" data-toggle="tooltip" data-placement="left" title="Film"><span>Film</span></a></li>
-		<li><a href="#home--chooserblock" data-toggle="tooltip" data-placement="left" title="Fin din bolig"><span>Fin&nbsp;din&nbsp;bolig</span></a></li>
-		<li><a href="#home--bilderblock" data-toggle="tooltip" data-placement="left" title="Bilder"><span>Bilder</span></a></li>
-		<li><a href="#home--mapblock" data-toggle="tooltip" data-placement="left" title="Belligenhet"><span>Belligenhet</span></a></li>
-		<li><a href="#contactblock" data-toggle="tooltip" data-placement="left" title="Meld din interess"><span>Meld&nbsp;din&nbsp;interesse</span></a></li>
-	</ul>
-</nav>
-
 <main class="main" role="main">	
 	
-	<header class="home__top is_light">
+	<header class="home__top is_opaque">
 		<div class="wrapper wrapper--wide">
 			<div class="home__top__brandi">
 				<span class="home__top__logo">vesbo<span>
@@ -45,15 +34,6 @@
 		</div>
 	</section>
 
-	<section id="home--videoblock" class="home--videoblock is_light">
-		<div class="wrapper wrapper--fullwidth">
-			<div class="page-header">
-			  <h2>Jordbærvegen Film<span>Klikk play for å starte filmen</span></h2>
-			</div>			
-
-			<iframe width="1280" height="720" src="//www.youtube.com/embed/tFUwCqyUSsE?rel=0&amp;controls=1&amp;showinfo=0&amp;feature=player_detailpage&amp;VQ=large" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</section>
 
 	<section id="home--chooserblock" class="home--chooserblock is_dark">
 		<div class="wrapper wrapper--fullwidth">
