@@ -35,7 +35,7 @@
 	</section>
 
 
-	<section id="home--chooserblock" class="home--chooserblock is_dark">
+	<section id="home__chooserblock" class="home__chooserblock is_dark">
 		<div class="wrapper wrapper--fullwidth">
 			<div class="page-header inverse">
 			  <h2>Finn din bolig<span>Dra musepekeren over bygget for å velge leilighet</span></h2>
@@ -56,7 +56,7 @@
 		);
 		$the_slides = new WP_Query( $sl_args );
 	?>
-	<section id="home--bilderblock" class="home--bilderblock is_light">
+	<section id="home__bilderblock" class="home__bilderblock is_light">
 		<div class="wrapper wrapper--fullwidth">
 			<div class="page-header"><h2>Bilder</h2></div>
 				<div class="master-slider ms-skin-default" id="masterslider">
@@ -102,7 +102,7 @@
 		</div>
 	</section>
 
-	<section id="home--mapblock" class="home--mapblock is_light">
+	<section id="home__mapblock" class="home__mapblock is_light">
 		<div class="wrapper wrapper--fullwidth map-wrapper">
 			<div id="map-canvas"></div>
 		</div>

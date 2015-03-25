@@ -2,7 +2,7 @@
 <header class="mobile-header">
     <div class="wrapper wrapper--narrow">
     <a class="navbar-brand-mobile" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <label class="nav-toggle" for="nav-toggle">MENU</label>
+    <label class="nav-toggle" for="nav-toggle"><i class="ion ion-navicon"></i></label>
   </div>
 </header>
 

@@ -8,7 +8,7 @@
 	left:0;width:100%;
 	z-index:11;
 
-	@include bp($s3) {
+	@include bp($s2) {
 		display: none;
 	}
 	
@@ -21,8 +21,8 @@
 		display: block;
 		position: absolute;
 		top:0;
-		width:130px;
-		height:35px;
+		width:140px;
+		height:45px;
 		background-image: url('../img/logo.png');
 		background-repeat: no-repeat;
 		background-position: left top;
@@ -37,22 +37,35 @@
 			color: #000;
 			text-decoration: none;
 		}
+
+		.home & {
+			display: none;
+		}
+
+		
 	}
 }
 
 	.nav-toggle {
+		color:$cyan;
 		display: inline-block;
 		font-weight: 700;
 		font-size: 13px;
 		line-height: 1;
-		border:1px solid #fff;
-		padding: 0.5em 0.5em;
+		border:1px solid currentColor;
+		padding: 0.25em 0.666em .125em;
 		margin-top:5px;
 		cursor: pointer;
 		float:right;
 		&:hover, &:focus {
-			box-shadow:inset 0 0 0 1px #fff;
+			//box-shadow:inset 0 0 0 1px $cyan;
+			color:$cyan-dark;
 		}
+
+		i {
+			font-size: 1.875em;
+		}
+
 	}
 	
 	input[type="checkbox"]#nav-toggle {
@@ -64,12 +77,13 @@
 		opacity: 0;
 
 	  &:checked + .navbar {
-	  		height: 100%;
+	  	height: 100%;
 			visibility:visible;
 			opacity:1;
-			background-image: url('../img/logo_kicsike.png');
+			background-image: url('../img/logo.png');
 			background-repeat: no-repeat;
 			background-position: 50% 90%;
+			background-size: 10em auto;
 			.navbar-brand {
 				display: none;
 			}
@@ -80,7 +94,7 @@
 
 .navbar-brand {
 	position: absolute;
-	height:42px;
+	height:50px;
 	width:158px;
 	top:8px;
 	text-indent: -9999px;
@@ -115,6 +129,13 @@
 		display: inline-block;
 		float:left;
 	}
+
+	.home & {
+		display: none;
+	}
+	.home .navbar.show & {
+		display: block;
+	}
 }
 
 .navbar {
@@ -135,7 +156,7 @@
 
 
 	
-	@include bp($s3) {
+	@include bp($s2) {
 		visibility: visible;
 		opacity: 1;
 		display: block;
@@ -220,7 +241,7 @@
 
 
 .apartment-hero {
-	background-color: $red-main;
+	background-color: $gray-xlight;
 	@include bp($s2) {
 	}
 

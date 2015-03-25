@@ -79,13 +79,6 @@ if(!$human == 0){
 		  <h2>Meld din interesse</h2>
 		</div>
 
-		<div class="contact--left">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/randi_holligen.jpg" alt="Randi Hollingen">
-			<h3>Randi Hollingen</h3>
-			<p>Notar Molde</p>
-			<p>Daglig&nbsp;leder / Eiendomsmegler&nbsp;MNEF</p>
-			<p>Mobil: <a href="tel:481 37 921">481 37 921</a><br/><a href="mailto:randi@notar.no">randi@notar.no</a></p>
-		</div>
 
 		<div class="contact--right">
 			<form action="<?php the_permalink(); ?>#contacresponse" method="post">

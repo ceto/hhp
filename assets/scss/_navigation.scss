@@ -13,7 +13,7 @@
 		transform: translateY(0) scale(1);
 	}
 
-	@include bp($s3){
+	@include bp($s2){
 		transform:none;
 		margin:0;
 		padding:0;
@@ -25,7 +25,7 @@
 		margin:0.5em;
 
 
-		@include bp($s3){
+		@include bp($s2){
 			display: inline-block;
 			margin:0;
 			margin-left:12px;
@@ -36,7 +36,7 @@
 			display: inline-block;
 			font-family: $deffont;
 			font-weight: 400;
-			font-size: .875em;
+			font-size: 1.25em;
 			line-height: 1;
 			text-transform: uppercase;
 			text-align: center;
@@ -50,7 +50,7 @@
 
 
 
-			@include bp($s3){
+			@include bp($s2){
 				display: inline-block;
 				font-size: 13px;
 

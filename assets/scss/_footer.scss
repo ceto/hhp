@@ -1,34 +1,70 @@
 .staff {
-padding:3em 0;
-background-color: $gray-xlight;
-border-top:1px solid #000;
+padding:4em 0 5em;
+background-color: #fff;
+border-top:1px solid $gray-xlight;
+color:#000;
+
+
+	a {
+		color:#000;
+		border-bottom:3px solid transparent;
+		&:hover, &:focus {
+			color:$cyan;
+			text-decoration: none;
+			border-bottom-color:currentColor;
+
+		}
+	}
+
 }
 
 .garanti {
-	text-align: center;
 	@include clearfix();
+	position: relative;
+
+	text-align: center;
+
 	max-width: 28em;
 	margin:0 auto 2em auto;
+	font-weight: 800;
 	@include bp($s2){
 		text-align: left;
-		margin:2em auto;
+		margin:2em auto 3em;
+		//max-width: none;
 	}
 	@include bp($s3){
-		width:33.333%;
+		width:40%;
 		float:left;
-		max-width: none;
+		margin:1.5em 0 0;
+		//max-width: none;
 
 	}
 }
 
-.garanti__logo {
-	max-width: 20em;
+a.garanti__logo {
+	max-width: 15em;
 	display: block;
 	margin: 0 auto;
+	border-bottom: none;
 	@include bp($s2){
-		float:left;
-		width:33.333%;
+		
+		position: absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		//width:14em;
 		max-width: none;
+
+		img {
+			position: absolute;
+			left:0;
+			top:0;
+			max-width: none;
+			width:auto;
+			height:100%
+		}
+
+	
 	}
 	@include bp($s3){
 		width:30%;
@@ -36,26 +72,28 @@ border-top:1px solid #000;
 }
 
 .garanti__addr {
-	
 	margin:0 0;
 	padding:1em 1em;
-	font-weight: 400;
 	font-size: 1.125em;
 	@include bp($s2){
-		float:right;
-		width:66.666%;
-		padding:1.5em 0 0 1em;
+		width:15em;
+		height: 6em;
+		padding:1em 0 1em 1em;
+		margin-left: 38%;
 	}
 	@include bp($s3){
-		padding-top: .25em;
-		width:70%;
+		//padding-top: .25em;
+		//width:70%;
 	}
 }
 
 .staff__members {
 	@include clearfix();
+	font-weight: 800;
+	max-width: 50em;
+	margin:0 auto;
 	@include bp($s3){
-		width:66.666%;
+		width:60%;
 		float:right;
 	}
 
@@ -84,45 +122,62 @@ border-top:1px solid #000;
 		padding:0;
 
 	}
+
+	@include bp($s3) {
+		margin:0 .5%;
+	}
 }
 
 .member__portre {
 	
 	@include bp($s2){
 		float:right;
-		width:45%;
-		padding-left: 1em;
+		width:7.5em;
+		//max-width: 50%;
+		padding-left: .5em;
 	}
 }
 
 .member__name {
 	@include bp($s2){
 		float:left;
-		width:55%;
+		width:calc(100% - 7.5em);
+	}
+	@include bp($s4){
+		margin-top: 6em;
 	}
 }
 .member__phone {
+	//font-weight: 400;
 	@include bp($s2){
 		float:left;
-		width:55%;
+		width:calc(100% - 7.5em);
 	}
 }
 
 
 .content-info {
+	@include clearfix();
 	background-color: $cyan;
 	color:#fff;
 	text-align: center;
 	font-family: $sans-serif;
 	padding-top: 1em;
-	padding-bottom: 2em;
+	padding: 1em 0 .5em;
+	font-weight: 400;
+
 }
 	.footer--logo {
-		margin:1.5em auto;
+		margin:1.5em auto .5em;
 		display: inline-block;
+		width:10em;
 		@include bp($s2){
 			width: 10%;
 			float:left;
+			margin-top: .25em;
+		}
+		@include bp($s3){
+			margin-top: .5em;
 		}
 	}
 	.footer--tothetop {
@@ -130,9 +185,14 @@ border-top:1px solid #000;
 		text-transform: uppercase;
 		font-weight: bold;
 		color:$gray-xlight;
+		font-size: .875em;
 		@include bp($s2){
 			width:10%;
 			float:right;
+			margin-top: -.75em;
+		}
+		@include bp($s3){
+			margin-top: -.25em;
 		}
 		&:hover, &:focus {
 			color:#fff;
@@ -156,11 +216,19 @@ border-top:1px solid #000;
 	.footer--copy{
 		display: block;
 		//font-size: 0.875em;
-		font-weight: 400;
 		@include bp($s2){
 			width:80%;
 			float:left;
 			text-align: center;
+			padding:0 1em 0 1em;
+			margin:0;
+			margin-top: -.5em;
+		}
+		@include bp($s3){
+			margin-top: 0;
+		}
+		@include bp($s4){
+			margin-top: .25em;
 		}
 		a {
 			color:$gray-xlight;

@@ -302,7 +302,7 @@ if (is_admin()){
     'context' => 'normal',            // where the meta box appear: normal (default), advanced, side; optional
     'fields' => array(),            // list of meta fields (can be added by field arrays)
     'local_images' => false,          // Use local or hosted images (meta box images for add/remove)
-    'use_with_theme' => '/wp-content/themes/jbv/lib/TMC'          //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
+    'use_with_theme' => '/wp-content/themes/hhp/lib/TMC'          //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
   );
   $my_meta =  new Tax_Meta_Class($config);
   $my_meta->addText($prefix.'floors',array('name'=> __('Floors','roots')));

@@ -9,6 +9,10 @@ $(function() {
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        $('.fixedhead').removeClass('show');
+        // if (window.pageYOffset < 65) {
+        //   $('.fixedhead').removeClass('fixedhead');
+        // }
         return false;
       
 

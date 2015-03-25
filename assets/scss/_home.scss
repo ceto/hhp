@@ -89,34 +89,37 @@
 .home--header {
   color: #000;
   background-color: #fff;
-  background-image: url('../img/home_head_bg2_small.jpg');
+  background-image: url('../img/hero_home_small.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @include bp($s2) {
-    background-image: url('../img/home_head_bg2_large.jpg');
+    background-image: url('../img/hero_home_medium.jpg');
   }
   @include bp($s3) {
+    background-image: url('../img/hero_home_large.jpg');
   }
   @include bp($s4) {
-    background-image: url('../img/home_head_bg2_1920.jpg');
+    background-image: url('../img/hero_home_hd.jpg');
   }
   @include bp($s5) {
-    background-image: url('../img/home_head_bg2_brutal.jpg');
+    background-image: url('../img/hero_home_full.jpg');
   }
   .wrapper {
     height: 20em;
 
     @include bp($s2) {
-      height: 40em;
+      height: 30em;
     }
     @include bp($s3) {
+      height: 35em;
     }
     @include bp($s4) {
-      height: 50em;
+      height: 44em;
     }
     @include bp($s5) {
+      height: 50em;
     }
   }
 }
@@ -132,7 +135,7 @@
   transform: translateY(-50%) translateX(-50%);
   text-align: center;
 
-  text-shadow: 0 0 1px rgba(#000,.2);
+  text-shadow: 0 0 1px rgba(#fff,.5);
 
   @include bp($s2) {
     font-size: 1.5em;
@@ -224,8 +227,9 @@
   }
 }
 
-.home--mapblock {
-  border-bottom: 1px solid #000;
+.home__mapblock {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   .wrapper {
     height: 20em;
 
@@ -296,7 +300,7 @@
 }
 
 
-.home--bilderblock {
+.home__bilderblock {
   background-color: $gray-xlight;
   .page-header {
     background-color: #fff;
@@ -314,7 +318,7 @@
 
 
 
-.home--chooserblock {
+.home__chooserblock {
   //color: #fff;
   background-color: $cyan;
   .detailswrapper {

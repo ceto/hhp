@@ -71,14 +71,17 @@ $(document).bind(mousewheelevt, function(e) {
         var evt = window.event || e; //equalize event object     
         evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
         var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta; //check for detail first, because it is used by Opera and FF
-        if(delta > 0)
-            {
+        if(delta > 0) {
             //console.log('Felfele');
             if (felcsoki++ >= 2 ) {
               lecsoki=0;
+              
               $('.fixedhead').addClass('show');
               $('body').attr('data-offset','65');
+
+
             }
+            
             }
         else
             {
@@ -89,7 +92,13 @@ $(document).bind(mousewheelevt, function(e) {
               $('body').attr('data-offset','0');
             }
             }
+    
+    if (window.pageYOffset < 65) {
+      $('.navbar').removeClass('show');
     }
+
+    }
+    
 );
 
 //*********** Smooth scroll *************
@@ -159,6 +168,15 @@ jQuery(document).ready(function() {
 
 
   $('.home--videoblock').fitVids();
+
+  $('.navbar-nav a').click(function(e) {
+    document.getElementById('nav-toggle').checked = false;
+  });
+
+
+  $(window).resize(function () {
+    document.getElementById('nav-toggle').checked = false;
+  });
 
 
 });
