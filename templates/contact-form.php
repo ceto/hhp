@@ -16,7 +16,7 @@
   $missing_content = 'Missing fields are required';
   $email_invalid   = 'Invalid e-mail address';
   $message_unsent  = 'Error message';
-  $message_sent    = '<strong>Melding er sendt Randi Hollingen i Notar.</strong><br>Vi vil ta kontakt med deg så raskt som mulig. Ha en fin dag';
+  $message_sent    = '<strong>Melding er sendt.</strong><br>Vi vil ta kontakt med deg så raskt som mulig. Ha en fin dag';
 
   //user posted variables
   $name = $_POST['contact_name'];
@@ -28,7 +28,7 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'randi@notar.no';
+  $to = 'miklos.kemecsei@brickvisual.com';
   $subject = "Message from ".get_bloginfo('name');
   
   $headers = "From: " . strip_tags($email) . "\r\n";
