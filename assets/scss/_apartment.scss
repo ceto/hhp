@@ -15,6 +15,7 @@
 		//width: 80%;
 		//display: inline-block;
 		//float: right;
+		text-align: center;
 
 	}
 
@@ -28,33 +29,34 @@
 		.holdit {
 			@include clearfix();
 			position: relative;
-			padding:36px 12px;
+			//padding:36px 12px;
 			@include bp($s1){
-				padding:24px;
+				//padding:24px;
 			}
 			@include bp($s2){
-				padding:36px;
-				max-width: 549px;
+				//padding:36px;
+				//max-width: 549px;
 			}
 			@include bp($s4){
-				padding:60px 48px;
+				//padding:60px 48px;
 			}
 
 			&.nohorizpadding {
 				@include bp($s1){
-					padding:12px;
+					//padding:12px;
 				}
 				@include bp($s2){
-					padding:60px 0 12px;
+					//padding:60px 0 12px;
 					//max-width: 549px;
 				}
 			}
 
 		}
 		.apartment-details--right--inner-red {
-			background-color: $cyan-dark;
-			color:#fff;
-			font-family: $sans-serif;
+			background-color: $gray-xlight;
+			padding:2em 2em;
+			//color:#fff;
+			//font-family: $sans-serif;
 		}
 		
 		.apartment-3dlink {
@@ -84,36 +86,36 @@
 
 
 .apartment-3dfloormap {
-	margin:2em 0;
-	padding:0 12px 0 12px;
+	margin:0 0;
+	//padding:0 12px 0 12px;
 	@include bp($s2) {
-		padding:0 12px 0 12px;
+		//padding:0 12px 0 12px;
 	}
 	@include bp($s3) {
-		padding:0 36px 0 12px;
+		//padding:0 36px 0 12px;
 	}
 	@include bp($s4) {
-		padding:0 48px 0 48px;
+		//padding:0 48px 0 48px;
 	}
 	img {
-		width:100%;
-		max-width: 640px;
-		max-height: 980px;
+		//width:100%;
+		//max-width: 640px;
+		//max-height: 980px;
 	}
 }
 
 .apartment-2dfloormap, .apartment-schema {
-	text-align: center;
-	margin:2em 0;
+	
+	margin:0 0;
 	vertical-align: bottom;
-	@include bp($s1) {
-		width:50%;
-		float:left;
-	}
+	// @include bp($s1) {
+	// 	width:50%;
+	// 	float:left;
+	// }
 
 	img {
 		@include bp($s1) {
-			width:100%;
+			//width:100%;
 		}
 	}
 }

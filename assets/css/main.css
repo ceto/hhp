@@ -3284,16 +3284,16 @@ a[rel="next"], a[rel="prev"] {
   padding: 0 0.25em;
   text-align: center;
   text-decoration: none;
-  color: #A71D3E;
+  color: #fff;
   display: inline-block; }
   /* line 194, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/navigation */
   a[rel="next"]:hover, a[rel="next"]:focus, a[rel="prev"]:hover, a[rel="prev"]:focus {
-    color: #9A9898; }
+    color: #2F6395; }
 
 /* line 204, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/navigation */
 .page-header a[rel="next"], .page-header a[rel="prev"] {
   position: absolute;
-  top: 0.333em; }
+  top: 0.125em; }
 /* line 209, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/navigation */
 .page-header a[rel="next"] {
   right: 0; }
@@ -3545,8 +3545,13 @@ input[type="checkbox"]#nav-toggle {
   /* line 281, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
   .page-header.inverse h1, .page-header.inverse h2, .page-header.inverse h3 {
     color: #fff; }
+  /* line 286, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
+  .single-apartment .wrapper-apartment .page-header {
+    background-color: #1CBED5;
+    margin: 0;
+    padding: 1em 0 0.75em; }
 
-/* line 287, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
+/* line 293, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
 .theader {
   text-align: center;
   padding-top: 0.5em;
@@ -3560,7 +3565,7 @@ input[type="checkbox"]#nav-toggle {
   /* line 15, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/mixins */
   .theader:after {
     clear: both; }
-  /* line 294, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
+  /* line 300, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
   .theader h1, .theader h2, .theader h3 {
     color: #000;
     font-family: 'TitilliumMaps29L', sans-serif;
@@ -3568,7 +3573,7 @@ input[type="checkbox"]#nav-toggle {
     font-weight: 400;
     letter-spacing: 0.125em;
     margin: 0; }
-  /* line 302, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
+  /* line 308, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/header */
   .theader p {
     font-family: 'TitilliumTitle', sans-serif;
     margin: 0; }
@@ -5625,15 +5630,18 @@ img.mfp-img {
       width: 50%;
       text-align: right; } }
 
+/* line 14, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+.apartment-details--left--inner {
+  text-align: center; }
+
 @media only screen and (min-width: 768px) {
   .apartment-details--right {
     float: left;
     width: 50%; } }
 
-/* line 28, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 29, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .holdit {
-  position: relative;
-  padding: 36px 12px; }
+  position: relative; }
   /* line 11, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/mixins */
   .holdit:before, .holdit:after {
     content: " ";
@@ -5641,30 +5649,13 @@ img.mfp-img {
   /* line 15, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/mixins */
   .holdit:after {
     clear: both; }
-  @media only screen and (min-width: 480px) {
-    .holdit {
-      padding: 24px; } }
-  @media only screen and (min-width: 768px) {
-    .holdit {
-      padding: 36px;
-      max-width: 549px; } }
-  @media only screen and (min-width: 1280px) {
-    .holdit {
-      padding: 60px 48px; } }
-  @media only screen and (min-width: 480px) {
-    .holdit.nohorizpadding {
-      padding: 12px; } }
-  @media only screen and (min-width: 768px) {
-    .holdit.nohorizpadding {
-      padding: 60px 0 12px; } }
 
-/* line 54, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 55, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-details--right--inner-red {
-  background-color: #2F6395;
-  color: #fff;
-  font-family: 'TitilliumTitle', sans-serif; }
+  background-color: #EEEDEC;
+  padding: 2em 2em; }
 
-/* line 60, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 62, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-3dlink {
   position: absolute;
   right: 0px;
@@ -5680,54 +5671,31 @@ img.mfp-img {
   font-family: 'TitilliumMaps29L', sans-serif;
   font-weight: 700;
   font-size: 1.2em; }
-  /* line 74, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 76, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .apartment-3dlink:hover, .apartment-3dlink:focus {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
          -o-transform: scale(1.1);
             transform: scale(1.1);
     text-decoration: none; }
-  /* line 79, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 81, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .apartment-3dlink img {
     width: 90%; }
 
-/* line 86, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 88, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-3dfloormap {
-  margin: 2em 0;
-  padding: 0 12px 0 12px; }
-  @media only screen and (min-width: 768px) {
-    .apartment-3dfloormap {
-      padding: 0 12px 0 12px; } }
-  @media only screen and (min-width: 1024px) {
-    .apartment-3dfloormap {
-      padding: 0 36px 0 12px; } }
-  @media only screen and (min-width: 1280px) {
-    .apartment-3dfloormap {
-      padding: 0 48px 0 48px; } }
-  /* line 98, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
-  .apartment-3dfloormap img {
-    width: 100%;
-    max-width: 640px;
-    max-height: 980px; }
+  margin: 0 0; }
 
-/* line 105, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 107, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-2dfloormap, .apartment-schema {
-  text-align: center;
-  margin: 2em 0;
+  margin: 0 0;
   vertical-align: bottom; }
-  @media only screen and (min-width: 480px) {
-    .apartment-2dfloormap, .apartment-schema {
-      width: 50%;
-      float: left; } }
-  @media only screen and (min-width: 480px) {
-    .apartment-2dfloormap img, .apartment-schema img {
-      width: 100%; } }
 
-/* line 122, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 124, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-facts {
   position: relative; }
 
-/* line 125, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 127, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .data-item {
   font-family: 'TitilliumMaps29L', sans-serif;
   font-weight: 100;
@@ -5736,37 +5704,37 @@ img.mfp-img {
   line-height: 1;
   margin: 0.333em 0;
   text-align: left; }
-  /* line 133, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 135, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .data-item span {
     font-family: 'TitilliumTitle', sans-serif;
     font-weight: 100; }
-    /* line 141, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+    /* line 143, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
     .data-item span:after {
       content: ':'; }
-  /* line 145, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 147, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .data-item small {
     font-family: 'TitilliumTitle', sans-serif;
     font-weight: 100;
     font-size: 14px; }
-  /* line 151, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 153, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .data-item:first-child {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.5em;
     margin: 0.25em 0 0em; }
-  /* line 158, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 160, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .data-item a {
     color: #fff;
     text-decoration: none; }
-    /* line 161, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+    /* line 163, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
     .data-item a:hover, .data-item a:focus {
       color: #4AB84A; }
 
-/* line 184, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+/* line 186, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
 .apartment-discl {
   margin-top: 3em;
   max-width: 480px; }
-  /* line 188, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
+  /* line 190, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/apartment */
   .apartment-discl .btn {
     margin-top: 1.5em; }
 
