@@ -12,11 +12,11 @@
 	border-spacing:8px;
 	width:100%;
 	font-family:$sans-serif;
-	font-size:12px;
+	font-size:.875em;
 	line-height:1;
 	//overflow:hidden;
 	@include bp($s2){
-		font-size:14px;	
+		font-size:1.125em;	
 	}
 }
 .datarow{
@@ -27,7 +27,7 @@
 		font-family: $deffont;
 		text-transform: uppercase;
 		font-weight: 400;
-		font-size: 1.125em;
+		font-size: 1.25em;
 		//letter-spacing: 0.025em;
 		.datarow--cell{
 			padding:1em 0.666em;
@@ -56,6 +56,10 @@
 		padding:.666em 0.125em .333em;
 		text-align:center;
 		vertical-align: middle;
+		small {
+			font-weight: 800;
+			font-size: .75em;
+		}
 
 		//height: 2.75em;
 		@include bp($s2){

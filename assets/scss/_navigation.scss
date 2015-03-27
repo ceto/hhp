@@ -28,7 +28,7 @@
 		@include bp($s2){
 			display: inline-block;
 			margin:0;
-			margin-left:12px;
+			margin-left:.5em;
 		}
 
 		> a {
@@ -52,7 +52,8 @@
 
 			@include bp($s2){
 				display: inline-block;
-				font-size: 13px;
+				font-size: .875em;
+				padding:0.5em 0.666em .25em;
 
 				.whitebg & {
 					//color:$red-main;
@@ -62,6 +63,17 @@
 				}
 
 			}
+
+			@include bp($s3){
+				font-size: 1em;
+			}
+		}
+	}
+
+	li.active {
+		> a {
+			border-color: #000;
+			text-decoration: none;
 		}
 	}
 

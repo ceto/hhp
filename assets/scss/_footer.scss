@@ -163,23 +163,11 @@ a.garanti__logo {
 	text-align: center;
 	font-family: $sans-serif;
 	padding-top: 1em;
-	padding: 1em 0 .5em;
+	padding: 1.75em 0 1.25em;
 	font-weight: 400;
 
 }
-	.footer--logo {
-		margin:1.5em auto .5em;
-		display: inline-block;
-		width:10em;
-		@include bp($s2){
-			width: 10%;
-			float:left;
-			margin-top: .25em;
-		}
-		@include bp($s3){
-			margin-top: .5em;
-		}
-	}
+
 	.footer--tothetop {
 		display: inline-block;
 		text-transform: uppercase;
@@ -187,12 +175,9 @@ a.garanti__logo {
 		color:$gray-xlight;
 		font-size: .875em;
 		@include bp($s2){
-			width:10%;
+			//width:10%;
 			float:right;
-			margin-top: -.75em;
-		}
-		@include bp($s3){
-			margin-top: -.25em;
+			margin-top: 0;
 		}
 		&:hover, &:focus {
 			color:#fff;
@@ -217,17 +202,11 @@ a.garanti__logo {
 		display: block;
 		//font-size: 0.875em;
 		@include bp($s2){
-			width:80%;
+			width:95%;
 			float:left;
-			text-align: center;
+			text-align: left;
 			padding:0 1em 0 1em;
 			margin:0;
-			margin-top: -.5em;
-		}
-		@include bp($s3){
-			margin-top: 0;
-		}
-		@include bp($s4){
 			margin-top: .25em;
 		}
 		a {

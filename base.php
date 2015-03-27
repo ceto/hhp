@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?> data-spy="scroll" data-target=".subnav">
+<body <?php body_class(); ?> data-spy="scroll" data-target=".navbar-collapse">
 
   <!--[if lt IE 9]>
     <div class="alert alert-warning">
@@ -14,17 +14,13 @@
   
   <?php include roots_template_path(); ?>
 
-  <?php /* if (roots_display_sidebar()) : ?>
-    <aside class="sidebar" role="complementary">
-      <?php include roots_sidebar_path(); ?>
-    </aside><!-- /.sidebar -->
-  <?php endif; */ ?>
 
   <?php get_template_part('templates/contact','form'); ?>
 
   <?php get_template_part('templates/footer'); ?>
 
   <?php wp_footer(); ?>
+
   
   <?php if ( is_front_page() ) : ?>
     <!-- Master Slider -->
@@ -64,17 +60,6 @@
 
     </script>
 
-    <!-- Subnav with Tooltip -->
-
-    <script>
-      jQuery(document).ready(function() {
-        $('.navbar-subnav a').tooltip({
-          template:'<div class="tooltip tooltip--subnav" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
-          //delay: { "show": 200, "hide": 100 },
-        });
-        // $('body').scrollspy({ target: '.subnav' })      
-      });
-    </script>
     <!-- Google MAps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
@@ -99,15 +84,16 @@
           // zoomControlOptions: {
           //   style: google.maps.ZoomControlStyle.SMALL
           // },
-          center: new google.maps.LatLng(62.756715, 7.274334)
+          center: new google.maps.LatLng(60.344615, 5.259905)
         };
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flag.png';
-        var myLatLng = new google.maps.LatLng(62.756715, 7.274334);
+        var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marker.png';
+        var myLatLng = new google.maps.LatLng(60.344615, 5.259905);
         var beachMarker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          icon: image
+          icon: image,
+          animation: google.maps.Animation.DROP
         });
       }
 
@@ -116,6 +102,6 @@
     </script>
   <?php endif; ?>
 
-
+  
 </body>
 </html>

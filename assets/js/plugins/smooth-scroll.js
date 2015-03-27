@@ -13,8 +13,13 @@ $(function() {
         // if (window.pageYOffset < 65) {
         //   $('.fixedhead').removeClass('fixedhead');
         // }
-        return false;
-      
+
+        if ( $(this).attr('href')==='#prisliste' ) {
+          $('#detailswrapper').collapse('show');
+        };
+
+        return true;
+
 
       }
     }

@@ -170,11 +170,13 @@ jQuery(document).ready(function() {
   $('.home--videoblock').fitVids();
 
   $('.navbar-nav a').click(function(e) {
+    $('.navbar-nav a').blur();
     document.getElementById('nav-toggle').checked = false;
   });
 
 
   $(window).resize(function () {
+    $('.navbar-nav a').blur();
     document.getElementById('nav-toggle').checked = false;
   });
 

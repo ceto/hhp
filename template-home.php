@@ -3,6 +3,21 @@
 Template Name: Home Page
 */
 ?>
+<script>
+	//$('.navbar-nav li').removeClass('active');
+	$('.navbar-nav a').each(function() {
+		$(this).attr('href', $(this).attr('href').substring($(this).attr('href').indexOf("#")) );
+  });
+ //  $('.navbar-nav a[href=#detailswrapper]').attr('data-toggle','collapse');
+ //  $('.navbar-nav a[href=#detailswrapper]').attr('data-target','#detailswrapper');
+
+	// $('.navbar-nav .opener a').attr('data-toggle','collapse');
+ //  $('.navbar-nav .opener a').attr('data-target','#detailswrapper');
+
+  // jQuery(document).ready(function() {
+  // 	$('body').scrollspy({ target: '.navbar-collapse' });
+  // });
+</script>
 <main class="main" role="main">	
 	<?php while (have_posts()) : the_post(); ?>
 	<?php $actpost =	get_the_id(); ?>

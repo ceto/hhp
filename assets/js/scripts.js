@@ -11180,8 +11180,13 @@ var PDFObject=function(y){if(!y||!y.url){return false;}var w="1.2",b=y.id||false
         // if (window.pageYOffset < 65) {
         //   $('.fixedhead').removeClass('fixedhead');
         // }
-        return false;
-      
+
+        if ( $(this).attr('href')==='#prisliste' ) {
+          $('#detailswrapper').collapse('show');
+        };
+
+        return true;
+
 
       }
     }
@@ -11875,11 +11880,13 @@ jQuery(document).ready(function() {
   $('.home--videoblock').fitVids();
 
   $('.navbar-nav a').click(function(e) {
+    $('.navbar-nav a').blur();
     document.getElementById('nav-toggle').checked = false;
   });
 
 
   $(window).resize(function () {
+    $('.navbar-nav a').blur();
     document.getElementById('nav-toggle').checked = false;
   });
 
