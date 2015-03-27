@@ -193,7 +193,10 @@
     text-transform: uppercase;
   }
   p {
-    font-size: 1.25em;
+    font-size: 1em;
+    @include bp($s2) {
+      font-size: 1.25em;
+    }
   }
   .wrapper > *:first-child {
     margin-top: 0;

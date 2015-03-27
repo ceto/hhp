@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Register a slide post type.
  *
@@ -214,6 +213,72 @@ function jbv_apartment_meta( array $meta_boxes ) {
   );
 
 
+
+    // Add some box to Home Page
+
+    $prefix = '_homedata_';
+    $meta_boxes['homedata_metabox'] = array(
+        'id'            => 'homedata_metabox',
+        'title'         => __( 'Home sections', 'cmb2' ),
+        'pages'  => array( 'page', ), // Post type
+        'show_on'      => array( 'key' => 'page-template', 'value' => 'template-home.php' ),
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+
+          array(
+              'name' => 'Subtitle',
+              'id'   => $prefix .'subtitle',
+              'type' => 'text',
+          ),
+          array(
+              'name' => 'Blue circle text',
+              'id'   => $prefix .'blue',
+              'type' => 'text',
+          ),
+          array(
+              'name' => 'Prosjektet content',
+              'description' => 'Add any content you want',
+              'id'   => $prefix . 'prosjcont',
+              'type' => 'wysiwyg',
+              'options'    => array (
+                'wpautop' => true,
+                'media_buttons' => false,
+                //'teeny' => true, 
+              ),
+          ),
+          array(
+              'name' => 'Dokumenter content',
+              'description' => 'Add any content you want',
+              'id'   => $prefix . 'dokucontent',
+              'type' => 'wysiwyg',
+              'options'    => array (
+                'wpautop' => true,
+                'media_buttons' => false,
+                //'teeny' => true, 
+              ),
+          ),
+          array(
+              'name' => 'Omradet content',
+              'description' => 'Add any content you want',
+              'id'   => $prefix . 'omradetcontent',
+              'type' => 'wysiwyg',
+              'options'    => array (
+                'wpautop' => true,
+                'media_buttons' => false,
+                //'teeny' => true, 
+              ),
+          ),
+
+        ),
+    );
+
+
+
+
   return $meta_boxes;
 }
 
@@ -321,6 +386,8 @@ function cmb_initialize_cmb_meta_boxes() {
     require_once 'CMB/init.php';
 
 }
+
+
 
 
 

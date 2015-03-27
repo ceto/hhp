@@ -36,11 +36,18 @@
         width:1920,    // slider standard width
         height:1024,   // slider standard height
         space:0,
-        preload:3,
+        preload:2,
+        overPause:false,
+        loop:true,
         autoplay:true,
         fullwidth:true,
         autoHeight:true,
-        view:"fade"
+        view:"fade",
+        //grabCursor:true,
+        //mouse:true,
+        //swipe:false
+        
+        // more slider options goes here...
         
         // more slider options goes here...
       });

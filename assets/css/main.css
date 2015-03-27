@@ -4082,22 +4082,25 @@ a.garanti__logo {
     text-transform: uppercase; }
   /* line 195, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__contentblock p {
-    font-size: 1.25em; }
-  /* line 198, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+    font-size: 1em; }
+    @media only screen and (min-width: 768px) {
+      .home__contentblock p {
+        font-size: 1.25em; } }
+  /* line 201, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__contentblock .wrapper > *:first-child {
     margin-top: 0; }
-  /* line 201, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 204, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__contentblock .wrapper > *:last-child {
     margin-bottom: 0; }
 
-/* line 207, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 210, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 #home__prosjektet {
   padding: 6em 0; }
 
-/* line 213, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 216, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 #home__omradet h2, #home__dokumenter h2 {
   position: relative; }
-  /* line 215, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 218, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   #home__omradet h2:before, #home__dokumenter h2:before {
     position: absolute;
     top: -1.5em;
@@ -4107,18 +4110,18 @@ a.garanti__logo {
     content: '';
     background-color: #000; }
 
-/* line 230, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 233, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 .home__mapblock {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff; }
-  /* line 233, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 236, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__mapblock .wrapper {
     height: 20em; }
     @media only screen and (min-width: 768px) {
       .home__mapblock .wrapper {
         height: 40em; } }
 
-/* line 242, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 245, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 #map-canvas {
   height: 20em;
   margin: 0;
@@ -4131,7 +4134,7 @@ a.garanti__logo {
       left: 0;
       height: 100%; } }
 
-/* line 265, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 268, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 .home--mapblock--text {
   position: relative;
   z-index: 1;
@@ -4153,7 +4156,7 @@ a.garanti__logo {
     .home--mapblock--text {
       width: 25%;
       padding: 3em 48px 5em; } }
-  /* line 290, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 293, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home--mapblock--text h2 {
     font-size: 1.333em;
     margin-top: 3em;
@@ -4161,19 +4164,19 @@ a.garanti__logo {
     text-transform: uppercase;
     color: #A71D3E; }
 
-/* line 303, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 306, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 .home__bilderblock {
   background-color: #EEEDEC; }
-  /* line 305, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 308, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__bilderblock .page-header {
     background-color: #fff;
     margin: 0;
     padding: 2em; }
 
-/* line 321, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+/* line 324, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
 .home__chooserblock {
   background-color: #1CBED5; }
-  /* line 325, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
+  /* line 328, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/home */
   .home__chooserblock .detailswrapper .wrapper:last-of-type {
     padding-bottom: 4em; }
 
