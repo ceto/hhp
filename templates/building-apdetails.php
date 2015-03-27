@@ -49,7 +49,6 @@
 			<span class="datarow--cell de">Navn</span>
 			<span class="datarow--cell">Etasje</span>
 			<span class="datarow--cell">BRA</span>
-			<span class="datarow--cell">P-rom</span>
 			<span class="datarow--cell">Pris / Status</span>
 			<span class="datarow--cell stateold">Status</span>
 	  </p>

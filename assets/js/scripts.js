@@ -12006,9 +12006,8 @@ function redraw_canvas() {
       $tiptext='<p class="data-item">'+$datarow.eq(0).html()+'</p>';
       $tiptext+='<p class="data-item"><span>Etasje</span>'+$datarow.eq(1).html()+'</p>';
       $tiptext+='<p class="data-item"><span>Bra</span>'+$datarow.eq(2).html()+'</p>';
-      $tiptext+='<p class="data-item"><span>P-rom</span>'+$datarow.eq(3).html()+'</p>';
-      $tiptext+='<p class="data-item"><span>Pris</span>'+$datarow.eq(4).html()+'</p>';
-      $tiptext+='<p class="data-item"><span>Status</span>'+$datarow.eq(5).html()+'</p>';
+      $tiptext+='<p class="data-item"><span>Pris</span>'+$datarow.eq(3).html()+'</p>';
+      $tiptext+='<p class="data-item"><span>Status</span>'+$datarow.eq(4).html()+'</p>';
       
       return $tiptext;
     }

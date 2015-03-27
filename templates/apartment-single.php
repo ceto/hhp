@@ -67,7 +67,7 @@
             <p class="data-item"><span>Leilighet Nr</span> <?php the_title(); ?></p>
             <p class="data-item"><span>Etasje</span> <?php echo get_post_meta( $post->ID, '_meta_floor', true ); ?></p>
             <p class="data-item"><span>BRA</span> <?php echo get_post_meta( $post->ID, '_meta_omr', true ); ?> m<sup>2</sup></p>
-            <p class="data-item"><span>P-rom</span> <?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup></p>
+            <!-- <p class="data-item"><span>P-rom</span> <?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup></p> -->
             <p class="data-item"><span>Rom</span> <?php echo get_post_meta( $post->ID, '_meta_rom', true ); ?></p>
             <!-- <p class="data-item"><span>Balkong</span> <?php echo get_post_meta( $post->ID, '_meta_balkong', true ); ?> m<sup>2</sup></p> -->
             <?php if (get_post_meta( $post->ID, '_meta_state', true )!=='utsolgt'): ?>

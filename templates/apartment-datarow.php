@@ -27,9 +27,6 @@
 			<?php echo get_post_meta( $post->ID, '_meta_omr', true ); ?> m<sup>2</sup>
 		</span>
 		
-		<span class="datarow--cell">
-			<?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup>
-		</span>
 		
 		<span class="datarow--cell statepris">
 			<?php if (get_post_meta( $post->ID, '_meta_state', true )!=='fri'): ?>
