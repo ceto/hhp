@@ -88,8 +88,8 @@ $(document).bind(mousewheelevt, function(e) {
             //console.log('Lefele');
             if (lecsoki++ > 2 ) {
               felcsoki=0;
-              $('.fixedhead').removeClass('show');
-              $('body').attr('data-offset','0');
+              $('.fixedhead').addClass('show');
+              $('body').attr('data-offset','65');
             }
             }
     

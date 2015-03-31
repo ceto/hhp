@@ -11171,12 +11171,20 @@ var PDFObject=function(y){if(!y||!y.url){return false;}var w="1.2",b=y.id||false
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-      
+        
+        if (window.innerWidth<768) {
+        
+          $('html,body').animate({scrollTop: target.offset().top}, 1000);
+          $('.fixedhead').removeClass('show');
+        
 
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        $('.fixedhead').removeClass('show');
+        } else {
+          $('html,body').animate({scrollTop: target.offset().top-63}, 1000);
+          $('.navbar').addClass('show');
+        }
+
+
+
         // if (window.pageYOffset < 65) {
         //   $('.fixedhead').removeClass('fixedhead');
         // }
@@ -11798,8 +11806,8 @@ $(document).bind(mousewheelevt, function(e) {
             //console.log('Lefele');
             if (lecsoki++ > 2 ) {
               felcsoki=0;
-              $('.fixedhead').removeClass('show');
-              $('body').attr('data-offset','0');
+              $('.fixedhead').addClass('show');
+              $('body').attr('data-offset','65');
             }
             }
     

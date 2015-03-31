@@ -12,14 +12,14 @@
 		</div>
 		<div class="staff__members">
 			<div class="member">
-				<img class="member__portre" src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/img/staff/Elin_Stormo.jpg" alt="Elin Stormo">
-				<div class="member__name">Elin Stormo</div>
-				<div class="member__phone">Tlf: <a href="tel:95003934">950 03 934</a></div>
-			</div>
-			<div class="member">
 				<img class="member__portre" src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/img/staff/Annette_Kleven.jpg" alt="Annette Kleven">
 				<div class="member__name">Annette Kleven</div>
 				<div class="member__phone">Tlf: <a href="tel:98678560">986 78 560</a></div>
+			</div>
+			<div class="member">
+				<img class="member__portre" src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/img/staff/Elin_Stormo.jpg" alt="Elin Stormo">
+				<div class="member__name">Elin Stormo</div>
+				<div class="member__phone">Tlf: <a href="tel:95003934">950 03 934</a></div>
 			</div>
 			<div class="member">
 				<img class="member__portre" src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/img/staff/Eli_Lutcherath.jpg" alt="Eli Lütcherath">

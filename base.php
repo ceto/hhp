@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?> data-spy="scroll" data-target=".navbar-collapse">
+<body <?php body_class(); ?> data-spy="scroll" data-target=".navbar-collapse" data-offset="65">
 
   <!--[if lt IE 9]>
     <div class="alert alert-warning">

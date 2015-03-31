@@ -40,7 +40,9 @@ Template Name: Home Page
 				<?php the_content(); ?>
 			</div>		
 			<div class="home__headcircle">
+				<p>
 				<?php echo get_post_meta( $actpost, '_homedata_blue', true ); ?>
+				</p>
 			</div>
 		</div>
 	</header>

@@ -4,12 +4,20 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-      
+        
+        if (window.innerWidth<768) {
+        
+          $('html,body').animate({scrollTop: target.offset().top}, 1000);
+          $('.fixedhead').removeClass('show');
+        
 
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        $('.fixedhead').removeClass('show');
+        } else {
+          $('html,body').animate({scrollTop: target.offset().top-63}, 1000);
+          $('.navbar').addClass('show');
+        }
+
+
+
         // if (window.pageYOffset < 65) {
         //   $('.fixedhead').removeClass('fixedhead');
         // }

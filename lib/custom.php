@@ -237,7 +237,12 @@ function jbv_apartment_meta( array $meta_boxes ) {
           array(
               'name' => 'Blue circle text',
               'id'   => $prefix .'blue',
-              'type' => 'text',
+              'type' => 'wysiwyg',
+              'options'    => array (
+                'wpautop' => true,
+                'media_buttons' => false,
+                'teeny' => true, 
+              ),
           ),
           array(
               'name' => 'Prosjektet content',
