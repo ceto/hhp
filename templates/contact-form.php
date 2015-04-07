@@ -33,7 +33,7 @@
   
   $headers = "From: " . strip_tags($email) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
-  $headers .= "CC: szabogabi@gmail.com\r\n";
+  //$headers .= "CC: szabogabi@gmail.com\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   //$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
   $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
