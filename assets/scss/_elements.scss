@@ -9,7 +9,7 @@
 	display:table;
 	//border-collapse:collapse;
 	border-collapse: separate;
-	border-spacing:8px;
+	border-spacing:0 .5em;
 	width:100%;
 	font-family:$sans-serif;
 	font-size:.875em;
@@ -30,7 +30,7 @@
 		font-size: 1.25em;
 		//letter-spacing: 0.025em;
 		.datarow--cell{
-			padding:1em 0.666em;
+			padding:.5em 0.666em;
 			&.de {
 				//padding-left:19px;
 			}
@@ -44,16 +44,41 @@
 		//width:100%;
 		//border:1px solid transparent;
 		color:#000;
+		transition:background-color .4s ease;
 		&.active, &:hover, &:focus {
-			outline:1px solid #000;
+			outline:1px solid $gray-xlight;
 			text-decoration: none;
+			//color:#fff;
+		}
+
+
+		&.state-fri {
+			background-color: rgba($ledig,.3);
+			&.active, &:hover, &:focus {
+				//outline:1px solid #fff;
+				background-color: rgba($ledig,1);
+			}
+		}
+		&.state-utsolgt {
+			background-color: rgba($solgt,.3);
+			&.active, &:hover, &:focus {
+				//outline:1px solid #fff;
+				background-color: rgba($solgt,1);
+			}
+		}
+		&.state-reserved {
+			background-color: rgba($reserviert,.3);
+			&.active, &:hover, &:focus {
+				//outline:1px solid #fff;
+				background-color: rgba($reserviert,1);
+			}
 		}
 	}
 
 	.datarow--cell {
 		position: relative;
 		display:table-cell;
-		padding:.666em 0.125em .333em;
+		padding:1em 0.125em .75em;
 		text-align:center;
 		vertical-align: middle;
 		small {
@@ -63,7 +88,7 @@
 
 		//height: 2.75em;
 		@include bp($s2){
-			padding:.666em 0.666em .333em;
+			padding:1em 0.666em .75em;
 		}
 		&.de {
 			//text-align: right;

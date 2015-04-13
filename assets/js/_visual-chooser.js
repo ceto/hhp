@@ -42,7 +42,7 @@ function redraw_canvas() {
     items[index].attr(
       {
        
-        fill: (menuitem.attr('data-state')==='fri')?'#EEEDEC':(menuitem.attr('data-state')==='utsolgt')?'#1CBED5':'#ffffff',
+        fill: (menuitem.attr('data-state')==='fri')?'#00C1DE':(menuitem.attr('data-state')==='utsolgt')?'#EA4933':'#EBC40C',
         opacity: (menuitem.attr('data-state')!=='fri')?0.5:0,
         stroke: '#000',
         'stroke-width': '2',

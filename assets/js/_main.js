@@ -180,6 +180,33 @@ jQuery(document).ready(function() {
     document.getElementById('nav-toggle').checked = false;
   });
 
+  $('.home__headcircle a').click(function(e) {
+    e.preventDefault();
+    $('.footer--contactblock').addClass('inverse');
+    $('.js_inverseon').addClass('active');
+    $('.js_inverseoff').removeClass('active');
+    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+  });
+
+  $('.js_inverseon').click(function(e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $('.js_inverseoff').removeClass('active');
+    $('.footer--contactblock').addClass('inverse');
+    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+  });
+
+  
+
+  $('.js_inverseoff').click(function(e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $('.js_inverseon').removeClass('active');
+    $('.footer--contactblock').removeClass('inverse');
+    $('.footer--contactblock #contact_type').attr('value','Interesse');
+  });
+
+
 
 });
 

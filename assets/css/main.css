@@ -3806,7 +3806,7 @@ a.garanti__logo {
   margin: 1em 0;
   display: table;
   border-collapse: separate;
-  border-spacing: 8px;
+  border-spacing: 0 0.5em;
   width: 100%;
   font-family: 'TitilliumTitle', sans-serif;
   font-size: 0.875em;
@@ -3827,47 +3827,68 @@ a.garanti__logo {
     font-size: 1.25em; }
     /* line 32, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
     .datarow.datatable--head .datarow--cell {
-      padding: 1em 0.666em; }
+      padding: 0.5em 0.666em; }
 
 /* line 42, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .datarow--link {
   display: table-row;
-  color: #000; }
-  /* line 47, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  color: #000;
+  -webkit-transition: background-color 0.4s ease;
+       -o-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease; }
+  /* line 48, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .datarow--link.active, .datarow--link:hover, .datarow--link:focus {
-    outline: 1px solid #000;
+    outline: 1px solid #EEEDEC;
     text-decoration: none; }
+  /* line 55, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  .datarow--link.state-fri {
+    background-color: rgba(0, 193, 222, 0.3); }
+    /* line 57, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+    .datarow--link.state-fri.active, .datarow--link.state-fri:hover, .datarow--link.state-fri:focus {
+      background-color: #00c1de; }
+  /* line 62, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  .datarow--link.state-utsolgt {
+    background-color: rgba(234, 73, 51, 0.3); }
+    /* line 64, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+    .datarow--link.state-utsolgt.active, .datarow--link.state-utsolgt:hover, .datarow--link.state-utsolgt:focus {
+      background-color: #ea4933; }
+  /* line 69, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  .datarow--link.state-reserved {
+    background-color: rgba(235, 196, 12, 0.3); }
+    /* line 71, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+    .datarow--link.state-reserved.active, .datarow--link.state-reserved:hover, .datarow--link.state-reserved:focus {
+      background-color: #ebc40c; }
 
-/* line 53, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+/* line 78, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .datarow--cell {
   position: relative;
   display: table-cell;
-  padding: 0.666em 0.125em 0.333em;
+  padding: 1em 0.125em 0.75em;
   text-align: center;
   vertical-align: middle; }
-  /* line 59, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  /* line 84, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .datarow--cell small {
     font-weight: 800;
     font-size: 0.75em; }
   @media only screen and (min-width: 768px) {
     .datarow--cell {
-      padding: 0.666em 0.666em 0.333em; } }
-  /* line 75, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+      padding: 1em 0.666em 0.75em; } }
+  /* line 100, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .datarow--cell .ministate {
     font-size: 0.75em;
     display: block;
     font-family: 'TitilliumMaps29L', sans-serif;
     text-transform: uppercase;
     font-weight: 100; }
-  /* line 84, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  /* line 109, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .datarow--cell.stateold {
     display: none; }
 
-/* line 89, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+/* line 114, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .tooltip .ministate {
   display: none; }
 
-/* line 92, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+/* line 117, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .tiny3d {
   position: absolute;
   left: 6%;
@@ -3877,13 +3898,13 @@ a.garanti__logo {
   display: inline-block;
   width: 1.875em;
   height: auto; }
-  /* line 102, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  /* line 127, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .tooltip .tiny3d {
     left: 78%;
     top: 0.875em;
     width: 1.25em; }
 
-/* line 110, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+/* line 135, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .pdf-viewer {
   width: 100%;
   min-height: 300px;
@@ -3892,15 +3913,15 @@ a.garanti__logo {
     .pdf-viewer {
       min-height: 900px;
       height: 900px; } }
-  /* line 118, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  /* line 143, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .pdf-viewer p {
     padding: 1em; }
-  /* line 121, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+  /* line 146, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
   .pdf-viewer object {
     display: block;
     background-color: #333232; }
 
-/* line 128, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
+/* line 153, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/elements */
 .full_iframe {
   width: 100%;
   min-height: 75vh;
@@ -4195,40 +4216,51 @@ a.garanti__logo {
 .footer--contactblock {
   font-family: 'TitilliumTitle', sans-serif;
   background-color: #EEEDEC;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  color: #3C3B3B;
+  -webkit-transition: background-color 0.2s ease;
+       -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease; }
+  /* line 8, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  .footer--contactblock.inverse {
+    background-color: #2F6395;
+    color: #EEEDEC; }
+    /* line 11, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    .footer--contactblock.inverse .btn {
+      border: 1px solid #EEEDEC;
+      background-color: transparent; }
+      /* line 14, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+      .footer--contactblock.inverse .btn:hover, .footer--contactblock.inverse .btn:focus {
+        background-color: #1CBED5; }
 
-/* line 8, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 22, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .page-header h2 {
   color: #3C3B3B; }
+/* line 25, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+.page-header p {
+  color: inherit;
+  font-size: 1em;
+  margin: 3em 0 0; }
+  /* line 30, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  .page-header p a {
+    font-family: 'TitilliumMaps29L', sans-serif;
+    color: inherit;
+    font-weight: 400;
+    line-height: 1;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    text-transform: none; }
+    /* line 38, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    .page-header p a:hover {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor; }
+    /* line 44, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    .page-header p a.active {
+      font-size: 1.5em;
+      text-transform: uppercase; }
 
-/* line 13, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
-.contact--left {
-  text-align: center;
-  margin-bottom: 3em; }
-  @media only screen and (min-width: 768px) {
-    .contact--left {
-      float: left;
-      width: 33.333%;
-      padding: 24px;
-      margin-bottom: 0; } }
-  /* line 24, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
-  .contact--left img {
-    max-width: 180px; }
-  /* line 28, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
-  .contact--left h3 {
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  /* line 34, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
-  .contact--left a {
-    color: #3C3B3B; }
-    /* line 36, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
-    .contact--left a:hover, .contact--left a:focus {
-      color: #A71D3E;
-      text-decoration: none; }
-
-/* line 43, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 53, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .contact--right {
   max-width: 380px;
   margin: 0 auto; }
@@ -4237,42 +4269,53 @@ a.garanti__logo {
       max-width: none;
       padding: 24px; } }
 
-/* line 60, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 70, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .formitem {
   margin: 2em 0; }
-  /* line 63, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  /* line 73, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
   .formitem:first-child {
     margin-top: 0; }
 
-/* line 68, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 78, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .formactions {
   margin: 2em 0;
   text-align: center; }
 
-/* line 75, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 85, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 input[type="text"], input[type="email"], input[type="tel"], textarea {
   font-family: 'TitilliumTitle', sans-serif;
   font-size: 1em;
   line-height: 1;
-  color: #000;
+  color: #3C3B3B;
   padding: 0.75em 1em;
   border: 2px solid #1CBED5;
   border-top: none;
   border-right: none;
   width: 100%;
   outline: none;
-  background-color: #EEEDEC; }
-  /* line 89, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  background-color: transparent; }
+  /* line 99, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
   input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
-    color: #3C3B3B;
+    color: inherit;
     -webkit-box-shadow: inset 1px -1px 0 0 #1CBED5;
             box-shadow: inset 1px -1px 0 0 #1CBED5; }
+  /* line 104, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  .inverse input[type="text"], .inverse input[type="email"], .inverse input[type="tel"], .inverse textarea {
+    border: 2px solid #EEEDEC;
+    border-top: none;
+    border-right: none;
+    color: #EEEDEC; }
+    /* line 110, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    .inverse input[type="text"]:focus, .inverse input[type="email"]:focus, .inverse input[type="tel"]:focus, .inverse textarea:focus {
+      color: #fff;
+      -webkit-box-shadow: inset 1px -1px 0 0 #EEEDEC;
+              box-shadow: inset 1px -1px 0 0 #EEEDEC; }
 
-/* line 95, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 117, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 textarea {
   line-height: 1.4; }
 
-/* line 99, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 121, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .btn {
   display: inline-block;
   background-color: #1CBED5;
@@ -4287,25 +4330,25 @@ textarea {
   margin: 0.5em 0.5em;
   text-align: center;
   outline: none; }
-  /* line 114, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  /* line 136, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
   .btn:hover, .btn:focus {
     text-decoration: none;
     cursor: pointer;
     background-color: #2F6395; }
 
-/* line 130, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+/* line 152, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
 .contact-response {
   text-align: center; }
-  /* line 132, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+  /* line 154, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
   .contact-response p {
     margin: 0;
     padding: 1em;
     width: 100%;
     color: #fff; }
-    /* line 137, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    /* line 159, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
     .contact-response p.success {
       background-color: #4AB84A; }
-    /* line 140, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
+    /* line 162, /Users/szabogabi/Documents/htdocs/hhp/wp-content/themes/hhp/assets/scss/contact */
     .contact-response p.error {
       background-color: #A71D3E; }
 

@@ -24,12 +24,16 @@
   $tel = $_POST['contact_tel'];
   $message = $_POST['contact_message'];
   $human = $_POST['contact_human'];
+  $type = $_POST['contact_type'];
 
 
   //php mailer variables
   //$to = get_option('admin_email');
   $to = 'Annette.kleven@vestbo.no';
-  $subject = "Message from ".get_bloginfo('name');
+  //$to = 'szabogabi@gmail.com';
+  
+
+  $subject = $type.": Hesjaholtet Park";
   
   $headers = "From: " . strip_tags($email) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
@@ -76,7 +80,9 @@ if(!$human == 0){
 	<div class="wrapper wrapper--extranarrow">
 
     <div class="page-header">
-		  <h2>Meld din interesse</h2>
+      <p>
+        <a class="js_inverseoff active" href="#">Meld interesse</a> | <a class="js_inverseon" href="#">Meld forkjøpsrett</a>
+      </p>
 		</div>
 
 
@@ -95,6 +101,7 @@ if(!$human == 0){
           <textarea name="contact_message" placeholder="melding" id="contact_message" cols="30" rows="6"></textarea>
         </div>
 	      <div class="formactions">
+          <input id="contact_type" type="hidden" name="contact_type" value="Interesse">
           <input type="hidden" name="contact_human" value="2">
           <input type="hidden" name="submitted" value="1">
 	        <input type="submit" class="btn" value="Send">

@@ -11898,6 +11898,33 @@ jQuery(document).ready(function() {
     document.getElementById('nav-toggle').checked = false;
   });
 
+  $('.home__headcircle a').click(function(e) {
+    e.preventDefault();
+    $('.footer--contactblock').addClass('inverse');
+    $('.js_inverseon').addClass('active');
+    $('.js_inverseoff').removeClass('active');
+    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+  });
+
+  $('.js_inverseon').click(function(e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $('.js_inverseoff').removeClass('active');
+    $('.footer--contactblock').addClass('inverse');
+    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+  });
+
+  
+
+  $('.js_inverseoff').click(function(e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $('.js_inverseon').removeClass('active');
+    $('.footer--contactblock').removeClass('inverse');
+    $('.footer--contactblock #contact_type').attr('value','Interesse');
+  });
+
+
 
 });
 
@@ -11945,7 +11972,7 @@ function redraw_canvas() {
     items[index].attr(
       {
        
-        fill: (menuitem.attr('data-state')==='fri')?'#EEEDEC':(menuitem.attr('data-state')==='utsolgt')?'#1CBED5':'#ffffff',
+        fill: (menuitem.attr('data-state')==='fri')?'#00C1DE':(menuitem.attr('data-state')==='utsolgt')?'#EA4933':'#EBC40C',
         opacity: (menuitem.attr('data-state')!=='fri')?0.5:0,
         stroke: '#000',
         'stroke-width': '2',
