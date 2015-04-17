@@ -75,6 +75,16 @@
 	}
 }
 
+.formitem--radios {
+	line-height:1.7;
+	font-size:1.125em;
+	h4{
+		font-size: 1.125em;
+		line-height: 1;
+		margin-bottom:.5em;
+	}
+}
+
 .formactions {
 	margin:2em 0;
 	text-align: center;
@@ -128,7 +138,7 @@ textarea {
 	text-transform: uppercase;
 	font-size: 1em;
 	line-height: 1;
-	padding:.666em 1.125em 0.333em 1.125em;
+	padding:.666em 1.125em 0.5em 1.125em;
 	margin:.5em .5em;
 	text-align: center;
 	outline:none;
@@ -164,4 +174,18 @@ textarea {
 		}
 
 	}
+}
+
+
+// Tabbable tabs
+// -------------------------
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
 }

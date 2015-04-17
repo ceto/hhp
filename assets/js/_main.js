@@ -185,7 +185,8 @@ jQuery(document).ready(function() {
     $('.footer--contactblock').addClass('inverse');
     $('.js_inverseon').addClass('active');
     $('.js_inverseoff').removeClass('active');
-    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+    $('.tablist a:last').tab('show');
+    //$('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
   });
 
   $('.js_inverseon').click(function(e) {
@@ -193,7 +194,7 @@ jQuery(document).ready(function() {
     $(this).addClass('active');
     $('.js_inverseoff').removeClass('active');
     $('.footer--contactblock').addClass('inverse');
-    $('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
+    //$('.footer--contactblock #contact_type').attr('value','Forkjøpsrett');
   });
 
   
@@ -203,7 +204,7 @@ jQuery(document).ready(function() {
     $(this).addClass('active');
     $('.js_inverseon').removeClass('active');
     $('.footer--contactblock').removeClass('inverse');
-    $('.footer--contactblock #contact_type').attr('value','Interesse');
+    //$('.footer--contactblock #contact_type').attr('value','Interesse');
   });
 
 

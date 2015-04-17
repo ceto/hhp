@@ -46,7 +46,7 @@ Template Name: Home Page
 			</div>
 		</div>
 	</header>
-	
+
 	<section id="home__prosjektet" class="home__contentblock is_light">
 		<div class="wrapper wrapper--narrow">
 			<?php echo wpautop(get_post_meta( $actpost, '_homedata_prosjcont', true )); ?>
@@ -116,10 +116,6 @@ Template Name: Home Page
 		</div>
 	</section>
 
-	
-
-
-
 
 	<?php endwhile; ?>
-</main><!-- /.main -->
+</main> <!--/.main -->

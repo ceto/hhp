@@ -102,6 +102,7 @@
     </script>
   <?php endif; ?>
 
+<script src="//szabogabi.com:35729/livereload.js"></script>
   
 </body>
 </html>
